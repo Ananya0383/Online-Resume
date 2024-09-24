@@ -1,0 +1,332 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body Header */
+
+#body-header{
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container{
+    margin-top: 20vh;
+}
+
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+/*About Section*/
+section {
+    width: 100%;
+    /*height: 75vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+
+
+/*Skills Section*/
+.skills-display {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 auto; /* Center the container */
+}
+
+.skill-progress {
+    width: 45%; /* Two items in one row */
+    height: 1.4rem;
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+    margin-bottom: 1.5rem; /* Space between rows */
+    position: relative; /* Enable relative positioning for text inside */
+}
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    height: inherit;
+    position: relative; /* Keep the background with text inside */
+}
+
+.skill-name span {
+    color: white; /* Text color contrast */
+    font-size: 1rem; /* Increase font size */
+    position: absolute; /* Absolute positioning for center alignment */
+    top: 50%;
+    left: 10px; /* Add a bit of padding from the left */
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 2; /* Ensure text is on top of the bar */
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+.mb-blue {
+    background-color: #2857a4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Percentage Classes */
+.eighty-five-percent {
+    width: 85%;
+}
+
+.seventy-percent {
+    width: 70%;
+}
+
+.sixty-percent {
+    width: 60%;
+}
+
+.fifty-percent {
+    width: 50%;
+}
+/* Portfolio Section Styling */
+#project {
+    text-align: center;
+    margin-bottom: 50px; /* Add some space after the project section */
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px; /* Add some space below the heading */
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows the projects to wrap if screen size is small */
+    gap: 20px; /* Adds space between project cards */
+}
+
+.project {
+    position: relative;
+    width: 300px; /* Set a width for the project */
+    height: 200px; /* Set a fixed height for the project */
+    overflow: hidden; /* Ensures content doesn't overflow outside the project div */
+    border-radius: 10px;
+}
+
+.project img {
+    width: 100%; /* Make the image fill the width of the project */
+    height: 100%; /* Make the image fill the height of the project */
+    object-fit: cover; /* Ensures the image covers the space without distorting */
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 211, 211, 0.8); /* Light grey background with transparency */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text {
+    padding: 15px;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+#education {
+    padding: 50px 0;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.education-details {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.education-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.timeline-dot {
+    height: 20px;
+    width: 20px;
+    background-color: #2857a4;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.education-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #2857a4;
+}
+
+.education-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: grey;
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Spacing */
+.mb75px {
+    margin-bottom: 75px;
+}
+/* Contact Section */
+#contact {
+    background-color: #2d2f3f; /* Background color similar to the footer */
+    color: #ffffff; /* Font color similar to the footer */
+    padding: 10px 0; /* Further reduce padding to shrink the footer size */
+    display: flex; /* Use flexbox to align items in the same row */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Vertically center the content */
+}
+
+.contact-details {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 10px; /* A small margin to move away from the edge */
+}
+
+.contact-details a {
+    color: #ffffff; /* Link color to match the text */
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    color: #d1d1d1; /* Hover effect for links */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Make sure the container takes the full width */
+    padding: 0 10px; /* Add a small padding on left and right */
+}
+
+.contact-item {
+    margin-right: 20px; /* Space between email and address */
+}
